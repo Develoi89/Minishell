@@ -1,9 +1,156 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/zpalfi/42/42Cursus/Minishell'
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/develoi89/Desktop/minishell_42/Minishell'
 mkdir -p objs/
-gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/  -I ~/.brew/opt/readline/include -o objs/count_words.o src/count_words.c
-echo "Compiling src/count_words.c"
-gcc objs/main.o objs/print_miniconcha.o objs/count_words.o -lreadline -L ~/.brew/opt/readline/lib libs/Libft/libft.a  -o minishell
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/cd.o src/cd.c
+echo "Compiling src/cd.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/ast.o src/ast.c
+echo "Compiling src/ast.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/pwd.o src/pwd.c
+echo "Compiling src/pwd.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/env.o src/env.c
+echo "Compiling src/env.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/exit.o src/exit.c
+echo "Compiling src/exit.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/exec.o src/exec.c
+echo "Compiling src/exec.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/main.o src/main.c
+echo "Compiling src/main.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/free.o src/free.c
+echo "Compiling src/free.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/echo.o src/echo.c
+echo "Compiling src/echo.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/unset.o src/unset.c
+ 
+echo "Compiling src/unset.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/utils.o src/utils.c
+ 
+echo "Compiling src/utils.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/error.o src/error.c
+echo "Compiling src/error.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/parser.o src/parser.c
+echo "Compiling src/parser.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/signal.o src/signal.c
+echo "Compiling src/signal.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/export.o src/export.c
+ 
+echo "Compiling src/export.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/in_file.o src/in_file.c
+echo "Compiling src/in_file.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/files_lst_heredoc.o src/files_lst_heredoc.c
+echo "Compiling src/files_lst_heredoc.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/do_dir.o src/do_dir.c
+echo "Compiling src/do_dir.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/out_file.o src/out_file.c
+echo "Compiling src/out_file.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/do_other.o src/do_other.c
+echo "Compiling src/do_other.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/init_env.o src/init_env.c
+echo "Compiling src/init_env.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/path_cmd.o src/path_cmd.c
+echo "Compiling src/path_cmd.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/cd_utils.o src/cd_utils.c
+echo "Compiling src/cd_utils.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/token_len.o src/token_len.c
+echo "Compiling src/token_len.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/assign_io.o src/assign_io.c
+echo "Compiling src/assign_io.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/cd_utils_2.o src/cd_utils_2.c
+echo "Compiling src/cd_utils_2.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/pipe_parser.o src/pipe_parser.c
+echo "Compiling src/pipe_parser.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/save_tokens.o src/save_tokens.c
+echo "Compiling src/save_tokens.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/cmd_lst_new.o src/cmd_lst_new.c
+echo "Compiling src/cmd_lst_new.c include/minishell.h"
+ 
+mkdir -p objs/
+ 
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/export_utils.o src/export_utils.c
+echo "Compiling src/export_utils.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/cmd_add_back.o src/cmd_add_back.c
+echo "Compiling src/cmd_add_back.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/count_tokens.o src/count_tokens.c
+echo "Compiling src/count_tokens.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/files_lst_new.o src/files_lst_new.c
+echo "Compiling src/files_lst_new.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/exec_simple.o src/exec_simple.c
+echo "Compiling src/exec_simple.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/files_add_back.o src/files_add_back.c
+echo "Compiling src/files_add_back.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/export_utils_2.o src/export_utils_2.c
+echo "Compiling src/export_utils_2.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/token_len_utils.o src/token_len_utils.c
+echo "Compiling src/token_len_utils.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/print_miniconcha.o src/print_miniconcha.c
+echo "Compiling src/print_miniconcha.c include/minishell.h"
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/save_tokens_init.o src/save_tokens_init.c
+echo "Compiling src/save_tokens_init.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/save_tokens_utils.o src/save_tokens_utils.c
+ 
+echo "Compiling src/save_tokens_utils.c include/minishell.h"
+ 
+mkdir -p objs/
+gcc -c -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include -o objs/find_cmd_after_redir.o src/find_cmd_after_redir.c
+echo "Compiling src/find_cmd_after_redir.c include/minishell.h"
+make -C libs/Libft
+make -C libs/Get_Next_Line
+ 
+gcc -Wall -Wextra -Werror -g -I include -I libs/Libft/include/ -I libs/Get_Next_Line/include/  -I ~/.brew/opt/readline/include objs/cd.o objs/ast.o objs/pwd.o objs/env.o objs/exit.o objs/exec.o objs/main.o objs/free.o objs/echo.o objs/unset.o objs/utils.o objs/error.o objs/parser.o objs/signal.o objs/export.o objs/in_file.o objs/files_lst_heredoc.o objs/do_dir.o objs/out_file.o objs/do_other.o objs/init_env.o objs/path_cmd.o objs/cd_utils.o objs/token_len.o objs/assign_io.o objs/cd_utils_2.o objs/pipe_parser.o objs/save_tokens.o objs/cmd_lst_new.o objs/export_utils.o objs/cmd_add_back.o objs/count_tokens.o objs/files_lst_new.o objs/exec_simple.o objs/files_add_back.o objs/export_utils_2.o objs/token_len_utils.o objs/print_miniconcha.o objs/save_tokens_init.o objs/save_tokens_utils.o objs/find_cmd_after_redir.o -lreadline -L ~/.brew/opt/readline/lib libs/Libft/libft.a libs/Get_Next_Line/get_next_line.a  -o minishell
 echo "Built minishell"
-make: Leaving directory `/Users/zpalfi/42/42Cursus/Minishell'
+make: Leaving directory `/Users/develoi89/Desktop/minishell_42/Minishell'
  
